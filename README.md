@@ -14,3 +14,11 @@
         function lowercaseCount(str) {
           return str.replace(/[^a-z]/g, '').length
         }
+
+- [Simple validation of a username with regex](https://www.codewars.com/kata/simple-validation-of-a-username-with-regex/javascript)
+
+> Write a simple regex to validate a username. Allowed characters are: `lowercase letters` or `numbers` or `underscore`. Length should be between 4 and 16 characters
+
+        function validateUsr(username) {
+          return /^[0-9a-z_]{4,16}$/.test(username)
+        }
