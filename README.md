@@ -31,9 +31,9 @@ function validateUsr(username) {
 
 - [Remove consecutive duplicate words](https://www.codewars.com/kata/remove-consecutive-duplicate-words/javascript)
 
-  <!-- HELP: -->
+<!-- HELP: -->
 
-  > Remove all consecutive duplicate words from string, leaving only first words entries.
+> Remove all consecutive duplicate words from string, leaving only first words entries.
 
 ```js
 function removeConsecutiveDuplicates(str) {
@@ -82,5 +82,21 @@ function vowelStart(str) {
     .replace(/\W/g, '')
     .split(/(?=[aeiou])/)
     .join(' ')
+}
+```
+
+- [Manipulate URL Parameters](https://www.codewars.com/kata/manipulate-url-parameters)
+
+<!-- HELP: -->
+
+> You need to write a function ( addOrChangeUrlParameter(url, keyValueParameter) ) that can manipulate URL parameters.It should be able to `add a parameter to an existing URL` and `change a parameter if it already exists`
+
+```js
+function addOrChangeUrlParameter(url, param) {
+  const foo = url.replace(new RegExp(param.split('=')[0] + '=[^&]*'), param)
+
+  return foo.includes(param)
+    ? foo
+    : foo + (foo.includes('?') ? '&' : '?') + param
 }
 ```
