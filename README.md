@@ -114,3 +114,20 @@ function remove(s) {
   return s.replace(/(\w)!+/g, '$1')
 }
 ```
+
+- [Authenticate a list of usernames](https://www.codewars.com/kata/authenticate-a-list-of-usernames/javascript)
+
+<!-- HELP: -->
+
+> Given an usernames, return true only if usernames comply with your company's guidelines. Return false otherwise.
+
+- it is between 6-10 characters long;
+- contains at least 1 lowercase letter;
+- contains at least 1 number;
+- contains only numbers and lowercase letters.
+
+```js
+function authList(x) {
+  return /^(?=.*\d+)(?=.*[a-z])[a-z\d]{6,10}$/.test(x)
+}
+```
