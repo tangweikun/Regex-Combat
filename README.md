@@ -22,3 +22,15 @@
         function validateUsr(username) {
           return /^[0-9a-z_]{4,16}$/.test(username)
         }
+
+### 7kyu
+
+- [Remove consecutive duplicate words](https://www.codewars.com/kata/remove-consecutive-duplicate-words/javascript)
+
+  <!-- HELP: -->
+
+  > Remove all consecutive duplicate words from string, leaving only first words entries.
+
+            function removeConsecutiveDuplicates(str) {
+              return str.replace(/\b(\w+)(?: \1)+\b/g, '$1')
+            }
