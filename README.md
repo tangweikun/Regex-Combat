@@ -100,3 +100,17 @@ function addOrChangeUrlParameter(url, param) {
     : foo + (foo.includes('?') ? '&' : '?') + param
 }
 ```
+
+- [Remove all exclamation marks from the end of words](https://www.codewars.com/kata/exclamation-marks-series-number-5-remove-all-exclamation-marks-from-the-end-of-words)
+
+> Remove all exclamation marks from the end of words. Words are separated by spaces in the sentence.
+
+```js
+function remove(s) {
+  return s.replace(/\b!+/g, '')
+}
+
+function remove(s) {
+  return s.replace(/(\w)!+/g, '$1')
+}
+```
