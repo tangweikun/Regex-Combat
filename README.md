@@ -31,6 +31,14 @@
 
   > Remove all consecutive duplicate words from string, leaving only first words entries.
 
-            function removeConsecutiveDuplicates(str) {
-              return str.replace(/\b(\w+)(?: \1)+\b/g, '$1')
-            }
+        function removeConsecutiveDuplicates(str) {
+          return str.replace(/\b(\w+)(?: \1)+\b/g, '$1')
+        }
+
+- [Regex validate PIN code](https://www.codewars.com/kata/regex-validate-pin-code/javascript)
+
+> ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
+
+        function validatePIN(pin) {
+          return /^(\d{4}|\d{6})$/.test(pin)
+        }
