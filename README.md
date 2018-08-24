@@ -172,3 +172,37 @@ function calculate(str) {
   return /loses/.test(str) ? +op1 - +op2 : +op1 + +op2
 }
 ```
+
+- [Create sequence containing all allowed characters](https://www.codewars.com/kata/create-sequence-containing-all-allowed-characters/javascript)
+
+<!-- HELP: -->
+
+> Define createSequence(regex) function that returns a string of all characters (in ASCII order) matching specified regular expression one-character criterion.
+
+```js
+const createSequence = regex => {
+  let seq = ''
+  for (let i = 0; i < 256; i++) {
+    if (regex.test(String.fromCharCode(i))) {
+      seq += String.fromCharCode(i)
+    }
+  }
+  return seq
+}
+```
+
+- [Simple template](https://www.codewars.com/kata/simple-template/javascript)
+
+<!-- HELP: -->
+
+> Implement function createTemplate which takes string with tags wrapped in {{brackets}} as input and returns closure, which can fill string with data (flat object, where keys are tag names).
+
+        Example
+            let personTmpl = createTemplate("{{name}} likes {{animalType}}");
+            personTmpl({ name: "John", animalType: "dogs" }); // John likes dogs
+
+```js
+function createTemplate(template) {
+  return values => template.replace(/{{(\w+)}}/g, (_, foo) => values[foo] || '')
+}
+```
