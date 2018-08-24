@@ -131,3 +131,18 @@ function authList(x) {
   return /^(?=.*\d+)(?=.*[a-z])[a-z\d]{6,10}$/.test(x)
 }
 ```
+
+- [Anchorize me](https://www.codewars.com/kata/anchorize-me/train/javascript)
+
+> Parse the text and replace Globally url with corresponding html syntax.Supported protocols: `http`,`https`,`ftp`,`ftps`,`file`,`smb`
+
+        Example:
+          Input: `hello http://world.com !`
+          Output: `hello <a href="http://world.com">http://world.com</a> !`
+
+```js
+function anchorize(text) {
+  var urlRegex = /((https?|ftps?|file|smb):[^\s]+)/gi
+  return text.replace(urlRegex, `<a href="$1">$1</a>`)
+}
+```
