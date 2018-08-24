@@ -146,3 +146,29 @@ function anchorize(text) {
   return text.replace(urlRegex, `<a href="$1">$1</a>`)
 }
 ```
+
+- [Fruit string calculator](https://www.codewars.com/kata/fruit-string-calculator/javascript)
+
+<!-- HELP: -->
+
+        Example:
+            "Panda has 48 apples and loses 4" returns 44
+            "Jerry has 34 apples and gains 6" returns 40
+            "loses" and "gains" are the only two words describing operators.
+
+```js
+function calculate(str) {
+  return eval(
+    str
+      .match(/\d+|lose|gain/g)
+      .join('')
+      .replace('lose', '-')
+      .replace('gain', '+'),
+  )
+}
+
+function calculate(str) {
+  const [op1, op2] = str.match(/\d+/gm)
+  return /loses/.test(str) ? +op1 - +op2 : +op1 + +op2
+}
+```
