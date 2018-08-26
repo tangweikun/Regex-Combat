@@ -206,3 +206,15 @@ function createTemplate(template) {
   return values => template.replace(/{{(\w+)}}/g, (_, foo) => values[foo] || '')
 }
 ```
+
+- [Are there doubles](https://www.codewars.com/kata/are-there-doubles/javascript)
+
+<!-- HELP: -->
+
+> Determines whether or not there are double characters in a string (including whitespace characters)
+
+```js
+function doubleCheck(str) {
+  return /(.)\1/i.test(str)
+}
+```
