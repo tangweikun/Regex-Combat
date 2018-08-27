@@ -230,3 +230,13 @@ function wheresWally(str) {
   return (' ' + str).search(/ Wally\b/)
 }
 ```
+
+- [heggeleggleggo](https://www.codewars.com/kata/heggeleggleggo/javascript)
+
+> Insert an "egg" after each consonant
+
+```js
+function heggeleggleggo(word) {
+  return word.replace(/([^aeiou\s])/gi, '$1egg')
+}
+```
