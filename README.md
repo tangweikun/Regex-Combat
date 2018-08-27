@@ -250,3 +250,25 @@ function vowel2index(str) {
   return str.replace(/[aeiou]/gi, (_, i) => i + 1)
 }
 ```
+
+## 6kyu
+
+- [Number Format](https://www.codewars.com/kata/number-format/train/javascript)
+
+> Format any integer provided into a string with "," (commas) in the correct places.
+
+<!-- HELP: -->
+
+```js
+function numberFormat(number) {
+  return number.toLocaleString()
+}
+
+const numberFormat = number =>
+  String(number).replace(/\d(?=(?:\d{3})+$)/g, '$&,')
+
+const numberFormat = number =>
+  String(number).replace(/(\d)(?=(\d{3})+$)/g, '$1,')
+
+const numberFormat = number => String(number).replace(/\B(?=(\d{3})+$)/g, ',')
+```
