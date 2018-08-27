@@ -240,3 +240,13 @@ function heggeleggleggo(word) {
   return word.replace(/([^aeiou\s])/gi, '$1egg')
 }
 ```
+
+- [The old switcheroo](https://www.codewars.com/kata/the-old-switcheroo/javascript)
+
+> Takes in a string and replaces all the vowels [a,e,i,o,u] with their respective positions within that string
+
+```js
+function vowel2index(str) {
+  return str.replace(/[aeiou]/gi, (_, i) => i + 1)
+}
+```
