@@ -1,5 +1,7 @@
 # REGEX MASTER
 
+[Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+
 ### 8kyu
 
 - [Regex count lowercase letters
@@ -216,5 +218,15 @@ function createTemplate(template) {
 ```js
 function doubleCheck(str) {
   return /(.)\1/i.test(str)
+}
+```
+
+- [Where's Wally](https://www.codewars.com/kata/wheres-wally)
+
+> Write a function that returns the index of the first occurence of the word "Wally". "Wally" must not be part of another word, but it can be directly followed by a punctuation mark. If no such "Wally" exists, return -1.
+
+```js
+function wheresWally(str) {
+  return (' ' + str).search(/ Wally\b/)
 }
 ```
