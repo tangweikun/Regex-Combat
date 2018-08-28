@@ -1,10 +1,14 @@
 # REGEX MASTER
 
+## Recommend
+
 [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
 [learn-regex](https://github.com/zeeshanu/learn-regex)
 
 [Regex 对象](http://javascript.ruanyifeng.com/stdlib/regexp.html)
+
+## Collections
 
 ### 8kyu
 
@@ -302,5 +306,24 @@ class FileNameExtractor {
   static extractFileName(s) {
     return s.match(/^\d+_([^.]+\.[^.]+)/)[1]
   }
+}
+```
+
+- [Strip Url Params](https://www.codewars.com/kata/strip-url-params/javascript)
+
+<!-- HELP: -->
+
+> Removes any duplicate query string parameters from the url
+
+> Removes any query string parameters specified within the 2nd argument (optional array)
+
+```js
+function stripUrlParams(url, paramsToStrip) {
+  return url.replace(/&?([^?=]+)=.+?/g, function(m, p1, qPos) {
+    return url.indexOf(p1 + '=') < qPos ||
+      (paramsToStrip || []).indexOf(p1) > -1
+      ? ''
+      : m
+  })
 }
 ```
