@@ -2,6 +2,10 @@
 
 [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
+[learn-regex](https://github.com/zeeshanu/learn-regex)
+
+[Regex 对象](http://javascript.ruanyifeng.com/stdlib/regexp.html)
+
 ### 8kyu
 
 - [Regex count lowercase letters
@@ -282,5 +286,21 @@ const bracesStatus = s => {
   s = s.replace(/[^\(\)\[\]\{\}]/g, '')
   while (/\(\)|\[\]|\{\}/.test(s)) s = s.replace(/\(\)|\[\]|\{\}/g, '')
   return s.length < 1
+}
+```
+
+- [extract file name](https://www.codewars.com/kata/extract-file-name/javascript)
+
+```js
+class FileNameExtractor {
+  static extractFileName(s) {
+    return s.replace(/^\d*_(.*)\..*$/, '$1')
+  }
+}
+
+class FileNameExtractor {
+  static extractFileName(s) {
+    return s.match(/^\d+_([^.]+\.[^.]+)/)[1]
+  }
 }
 ```
