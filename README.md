@@ -344,6 +344,16 @@ function wordsToObject(str) {
 }
 ```
 
+- [Validate my Password](https://www.codewars.com/kata/validate-my-password/train/javascript)
+
+```js
+function validPass(password) {
+  return /^(?=.+[a-z])(?=.+\d)[a-z\d]{3,20}$/i.test(password)
+    ? 'VALID'
+    : 'INVALID'
+}
+```
+
 ### 👨‍🏫 5kyu
 
 ### 👨‍🌾 4kyu
