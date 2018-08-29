@@ -327,3 +327,15 @@ function stripUrlParams(url, paramsToStrip) {
   })
 }
 ```
+
+- [Creating a string for an array of objects from a set of words](https://www.codewars.com/kata/creating-a-string-for-an-array-of-objects-from-a-set-of-words/javascript)
+
+```js
+function wordsToObject(str) {
+  return (
+    '[' +
+    str.replace(/(\S+) (\S+)/g, "{name : '$1', id : '$2'},").slice(0, -1) +
+    ']'
+  )
+}
+```
