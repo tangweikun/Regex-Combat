@@ -1,16 +1,20 @@
-# REGEX MASTER
+# REGEX COMBAT
+
+## Instruction
+
+Learning Regular Expressions to solve problems, there are some problems you can solve by regex.
 
 ## Recommend
 
-[Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+⌛ [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 
-[learn-regex](https://github.com/zeeshanu/learn-regex)
+🎊 [learn-regex](https://github.com/zeeshanu/learn-regex)
 
-[Regex 对象](http://javascript.ruanyifeng.com/stdlib/regexp.html)
+✂️ [Regex 对象](http://javascript.ruanyifeng.com/stdlib/regexp.html)
 
-## Collections
+## Combat
 
-### 8kyu
+### 👶 8kyu
 
 - [Regex count lowercase letters
   ](https://www.codewars.com/kata/regex-count-lowercase-letters/javascript)
@@ -37,7 +41,7 @@ function validateUsr(username) {
 }
 ```
 
-### 7kyu
+### 👦 7kyu
 
 - [Remove consecutive duplicate words](https://www.codewars.com/kata/remove-consecutive-duplicate-words/javascript)
 
@@ -259,7 +263,7 @@ function vowel2index(str) {
 }
 ```
 
-## 6kyu
+## 👨 6kyu
 
 - [Number Format](https://www.codewars.com/kata/number-format/train/javascript)
 
@@ -339,3 +343,9 @@ function wordsToObject(str) {
   )
 }
 ```
+
+### 👨‍🏫 5kyu
+
+### 👨‍🌾 4kyu
+
+### 👨‍🎓 3kyu
